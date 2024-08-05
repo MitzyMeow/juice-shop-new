@@ -1,5 +1,5 @@
 FROM node:18-buster as installer
-COPY . /juice-shop
+
 WORKDIR /juice-shop
 RUN npm i -g typescript ts-node
 RUN npm install --omit=dev --unsafe-perm
